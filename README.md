@@ -1,79 +1,43 @@
 # Plot.ly Homework - Belly Button Biodiversity
 
-![Bacteria by filterforge.com](Images/bacteria.jpg)
+Built an interactive dashboard to explore the [Belly Button Biodiversity DataSet](https://monalipatel.github.io/Interactive-Visualizations-and-Dashboards).
 
-In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+## Step 1 - Plotly.js
 
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+Used Plotly.js to build interactive charts for  dashboard.
 
-## Step 1: Plotly
+* Create a PIE chart that uses data from your samples route (`/samples/<sample>`) to display the top 10 samples.
 
-1. Use the D3 library to read in `samples.json`.
+  * Used `sample_values` as the values for the Bar chart
 
-2. Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+  * Used `otu_ids` as the labels for the Bar chart
 
-* Use `sample_values` as the values for the bar chart.
+  * Used `otu_labels` as the hovertext for the chart
 
-* Use `otu_ids` as the labels for the bar chart.
+  ![Bar Chart](Images/Bar chart.png)
 
-* Use `otu_labels` as the hovertext for the chart.
+* Created a Bubble Chart that uses data from samples route (`/samples/<sample>`) to display each sample.
 
-  ![bar Chart](Images/hw01.png)
+  * Used `otu_ids` for the x values
 
-3. Create a bubble chart that displays each sample.
+  * Used `sample_values` for the y values
 
-* Use `otu_ids` for the x values.
+  * Used `sample_values` for the marker size
 
-* Use `sample_values` for the y values.
+  * Used `otu_ids` for the marker colors
 
-* Use `sample_values` for the marker size.
+  * Used `otu_labels` for the text values
 
-* Use `otu_ids` for the marker colors.
+  ![Bubble Chart](Images/bubble_chart.png)
 
-* Use `otu_labels` for the text values.
+* Display the sample metadata from the route `/metadata/<sample>`
 
-![Bubble Chart](Images/bubble_chart.png)
+  * Display each key/value pair from the metadata JSON object somewhere on the page
 
-4. Display the sample metadata, i.e., an individual's demographic information.
+* Update all of the plots any time that a new sample is selected.
 
-5. Display each key-value pair from the metadata JSON object somewhere on the page.
+* An example dashboard page might look something like the following.
 
-![hw](Images/hw03.png)
+![Example Dashboard Page](Images/dashboard_part1.png)
+![Example Dashboard Page](Images/dashboard_part2.png)
 
-6. Update all of the plots any time that a new sample is selected.
-
-Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown below:
-
-![hw](Images/hw02.png)
-
-## Advanced Challenge Assignment (Optional)
-
-The following task is advanced and therefore optional.
-
-* Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
-
-* You will need to modify the example gauge code to account for values ranging from 0 through 9.
-
-* Update the chart whenever a new sample is selected.
-
-![Weekly Washing Frequency Gauge](Images/gauge.png)
-
-## Deployment
-
-Deploy your app to a free static page hosting service, such as GitHub Pages or Heroku. Submit the links to your deployment and your GitHub repo.
-
-Here is a [guide](Heroku_Deployment_Guide.md) to deploying your app Heroku. 
-
-## Hints
-
-* Use `console.log` inside of your JavaScript code to see what your data looks like at each step.
-
-* Refer to the [Plotly.js documentation](https://plot.ly/javascript/) when building the plots.
-
-### About the Data
-
-Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
-
-- - -
-
-© 2019 Trilogy Education Services
