@@ -40,6 +40,8 @@ Used Plotly.js to build interactive charts for  dashboard.
 
 * An example dashboard page might look something like the following.
 
+ ![example Dashboard](Images/Final.png)
+
 ![Example Dashboard Page](Images/dashboard_part1.png)
 ![Example Dashboard Page](Images/dashboard_part2.png)
 
