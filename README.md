@@ -33,6 +33,8 @@ Used Plotly.js to build interactive charts for  dashboard.
 * Display the sample metadata from the route `/metadata/<sample>`
 
   * Display each key/value pair from the metadata JSON object somewhere on the page
+  
+  ![Demographic Info](Images/Demo_Info.png)
 
 * Update all of the plots any time that a new sample is selected.
 
