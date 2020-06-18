@@ -14,7 +14,7 @@ Used Plotly.js to build interactive charts for  dashboard.
 
   * Used `otu_labels` as the hovertext for the chart
 
-  ![Bar Chart](Images/Bar chart.png)
+  ![Bar Chart](Images/Bar_chart.png)
 
 * Created a Bubble Chart that uses data from samples route (`/samples/<sample>`) to display each sample.
 
